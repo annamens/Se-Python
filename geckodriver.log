@@ -1,0 +1,60 @@
+1669797850776	geckodriver	INFO	Listening on 127.0.0.1:56162
+1669797853715	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56163" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofileIy4OyK"
+1669797855612	Marionette	INFO	Marionette enabled
+1669797855623	Marionette	INFO	Listening on port 56182
+Read port: 56182
+WebDriver BiDi listening on ws://127.0.0.1:56163
+1669797855817	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofileIy4OyK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56163/devtools/browser/0dfa6838-07e0-4066-9699-8ca460bd8e13
+1669797864496	Marionette	INFO	Stopped listening on port 56182
+!!! error running onStopped callback: TypeError: callback is not a function
+[Parent 25496, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\SRINIV~1\AppData\Local\Temp\rust_mozprofileIy4OyK\protections.sqlite
+1669797866775	geckodriver	INFO	Listening on 127.0.0.1:56206
+1669797869662	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56207" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofilepwq1WK"
+1669797870600	Marionette	INFO	Marionette enabled
+1669797870608	Marionette	INFO	Listening on port 62660
+Read port: 62660
+WebDriver BiDi listening on ws://127.0.0.1:56207
+1669797870746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofilepwq1WK\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56207/devtools/browser/2a150ae4-693a-4f9d-8612-b919c5e5db5e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+1669797880077	Marionette	INFO	Stopped listening on port 62660
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: https://admin-demo.nopcommerce.com/lib_npm/jquery/jquery.min.js?v=meexYto0mAKr6PjyeE37ROc-We8, line 2: NS_ERROR_NOT_INITIALIZED: 
+[Parent 10632, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+1669798014271	geckodriver	INFO	Listening on 127.0.0.1:51363
+1669798017272	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51364" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofileqYgR6m"
+1669798018249	Marionette	INFO	Marionette enabled
+1669798018260	Marionette	INFO	Listening on port 51371
+Read port: 51371
+WebDriver BiDi listening on ws://127.0.0.1:51364
+1669798018430	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofileqYgR6m\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51364/devtools/browser/3df72ca2-ee0e-4d39-be83-7ffef6f54397
+1669811892445	Marionette	INFO	Stopped listening on port 51371
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\SRINIV~1\AppData\Local\Temp\rust_mozprofileqYgR6m\protections.sqlite
+1669811897046	geckodriver	INFO	Listening on 127.0.0.1:61300
+1669811899932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61301" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofilegzZIe5"
+1669811901401	Marionette	INFO	Marionette enabled
+1669811901410	Marionette	INFO	Listening on port 55431
+Read port: 55431
+WebDriver BiDi listening on ws://127.0.0.1:61301
+1669811901606	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\SRINIV~1\\AppData\\Local\\Temp\\rust_mozprofilegzZIe5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61301/devtools/browser/bc30d234-bce0-4ae8-a574-47d874cca984
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://admin-demo.nopcommerce.com."
+1669812009475	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669812013170	Marionette	INFO	Stopped listening on port 55431
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: https://admin-demo.nopcommerce.com/lib_npm/jquery/jquery.min.js?v=meexYto0mAKr6PjyeE37ROc-We8, line 2: NS_ERROR_NOT_INITIALIZED: 
