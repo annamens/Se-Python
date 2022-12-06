@@ -1,0 +1,94 @@
+Selenium Python
+Install Python from python wedbsite
+Install Pycharm IDE from jet-brains
+
+Step-1: Create a new project in the Pycharm
+Install the following packages:
+1.Selenium : Selenium Libraries
+2.Pytest: Python UnitTest framework
+3.Pytest-html: Pytest HTML reports
+4.Pytest-xdist: Run tests parallel
+5.OPenpyxl: MS Excel support
+6.Allure-Pytest : to generate allure reports
+
+Step:2 Create folder structure
+Project Name	
+	|
+	pageObjects(Package)
+	|
+	testCases(Package)
+	|
+	utilities(Package)
+	|
+	TestData(Folder)
+	|
+	Configurations(Folder)
+	|
+	Logs(Folder)
+	|
+	Screenshots(Folder)
+	|
+	Reports(Folder)
+	|
+	Run.bat
+
+
+Run tests
+pytest -v -s testname --browser chrome
+
+Step-3: Automating Login test case
+-create LoginPage object class under "pageObjects"
+create Login test under "testcases"
+create confTest.py under "testCases"
+
+Step-4:Capture screenshot on failures
+-update login test with screenshot under "testcases"
+
+Step-5: Read common values from ini file
+- Add "config.ini" file in "Configurations" folder
+- create "readProperties.py" utility file under utilities package to read common data
+
+step-6:Adding logs to test case
+-Add customLogger.py under utilities package
+-Add logs to Login test case
+
+Step-7: Run tests on desired browser/crossbrowser/parallel
+- update confTest.py with required fixtues which will accept command line arguments
+-Pass browser name as argumetn in command line
+
+To run tests on desired browser
+pytest -s -v testname --browser chrome
+
+TO run tests parallel
+pytest -s -v -n=3 testname --browser chrome
+
+step-8 Generate pytest HTML reports
+update confTest with pytest hooks
+To generate HTML report run below command
+
+pytest -s -v -n=3 --html=Reports\report.html testname --browser chrome
+
+step-9 Automating Data Driven Test Case
+-Prepare test data in Excel sheet, place the test data in testData folder
+Create "ExcelUtils.py" utility
+
+Step-10 Adding new testCases
+step-11 Groups
+add marker in pytest.ini in testCases folder
+add user defined @pytest.mark.regression for every method
+
+pytest  -s -v -m "regression" --html=reports\report.html testCases/ --browser chrome               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
