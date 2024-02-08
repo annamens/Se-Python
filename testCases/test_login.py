@@ -1,5 +1,4 @@
 import time
-
 import pytest
 from selenium import webdriver
 from pageObjects.LoginPage import LoginPage
@@ -7,7 +6,6 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
 
-@pytest.mark.usefixtures('set_up')
 class Test_001_Login:
     baseURL = ReadConfig.getAppUrl()
     username = ReadConfig.getUserEmail()

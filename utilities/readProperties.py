@@ -1,14 +1,15 @@
-import configparser
 import os
+import configparser
 
-print('path: ', os.getcwd())
-config = configparser.RawConfigParser()
+config = configparser.ConfigParser()
+print('config path: ', os.getcwd())
 config.read(os.path.join(os.getcwd(), "config.ini"))
 
 
 class ReadConfig:
     @staticmethod
     def getAppUrl():
+        # url= config['common_info']['baseURL']
         url = config.get('common info', 'baseURL')
         return url
 
