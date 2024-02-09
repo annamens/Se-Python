@@ -14,9 +14,9 @@ class Test_SearchCustomerByEmail_004:
     logger = LogGen.logGen()  # Logger
 
     @pytest.mark.regression
-    def test_searchCustomerByEmail(self, set_up):
+    def test_searchCustomerByEmail(self, set_up1):
         self.logger.info("************* SearchCustomerByEmail_004 **********")
-        self.driver = set_up
+        self.driver = set_up1
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
 

@@ -32,7 +32,7 @@ class base_page():
          actions.move_to_element(el).perform()
     def drag_and_drop(self,source, target):
         actions.drag_and_drop(source, target)
-
+    
     def select_dropdown_by_value(self,el, option_value):
         element = self.driver.find_element(By.XPATH,el)
         select = Select(element)
