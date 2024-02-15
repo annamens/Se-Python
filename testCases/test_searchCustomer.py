@@ -1,6 +1,6 @@
 import time
 import pytest
-from pageObjects.LoginPage import LoginPage
+from pageObjects.LoginPage import login_page
 from pageObjects.AddCustomer import addCustomer
 from pageObjects.searchCustomer import SearchCustomer
 from utilities.readProperties import ReadConfig
@@ -20,7 +20,7 @@ class Test_SearchCustomerByEmail_004:
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
 
-        self.lp = LoginPage(self.driver)
+        self.lp = login_page(self.driver)
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()

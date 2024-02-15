@@ -3,7 +3,7 @@ import string
 import pytest
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
-from pageObjects.LoginPage import LoginPage
+from pageObjects.LoginPage import login_page
 from pageObjects.AddCustomer import addCustomer
 
 
@@ -14,13 +14,14 @@ class Test_001_AddCustomer:
     logger = LogGen.logGen()
 
     @pytest.mark.smoke
+    @pytest.mark.order(1)
     @pytest.mark.regression
-    def test_addCustomer(self, set_up1):
+    def test_add_customer(self, set_up1):
         self.logger.info("*********** test_addCustomer ***********")
         self.driver = set_up1
         self.driver.get(self.baseurl)
 
-        self.lp = LoginPage(self.driver)
+        self.lp = login_page(self.driver)
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
@@ -38,7 +39,7 @@ class Test_001_AddCustomer:
         self.ac.selectGender("Male")
         self.ac.enterDateOfBith("7/05/1985")
         self.ac.enterCompanyName("Persistent")
-        #self.ac.selectNewsLetter("Test store 2")
+        # self.ac.selectNewsLetter("Test store 2")
         self.ac.setManagerOfVendor("Vendor 2")
         self.ac.setCustomerRoles("Guests")
         self.ac.setAdminContent("This is for testing...")
@@ -46,7 +47,6 @@ class Test_001_AddCustomer:
 
         self.logger.info("************* Saving customer info **********")
         self.logger.info("********* Add customer validation started *****************")
-
 
         print(self.ac.getSuccessText())
         if 'The new customer has been added successfully.' in self.ac.getSuccessText():

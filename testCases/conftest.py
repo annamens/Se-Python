@@ -26,7 +26,7 @@ def set_up(browser):
 
 
 @pytest.fixture(autouse=True)
-def set_up1():
+def set_up1(request):
     browser = ReadConfig.getBrowser()
     if browser == 'chrome':
         driver = webdriver.Chrome()
