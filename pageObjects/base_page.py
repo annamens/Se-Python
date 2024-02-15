@@ -1,4 +1,3 @@
-import self
 from selenium.common import TimeoutException
 from selenium.webdriver.common import actions
 from selenium.webdriver.common.by import By
@@ -17,7 +16,6 @@ class base_page():
     def __init__(self, driver):
         self.driver = driver
 
-    actions = ActionChains(self.driver)
 
     def click_by_xpath(self, el):
         el = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.XPATH, el))
@@ -35,12 +33,15 @@ class base_page():
         self.driver.find_element(By.XPATH, el).send_keys(text)
 
     def hover(self, el):
+        actions = ActionChains(self.driver)
         actions.move_to_element(el).perform()
 
     def drag_and_drop(self, source, target):
+        actions = ActionChains(self.driver)
         actions.drag_and_drop(source, target)
 
     def select_dropdown_by_value(self, el, option_value):
+        actions = ActionChains(self.driver)
         element = self.driver.find_element(By.XPATH, el)
         select = Select(element)
         select.select_by_value(option_value)

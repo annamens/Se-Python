@@ -1,7 +1,7 @@
 import time
 import pytest
 from selenium import webdriver
-from pageObjects.LoginPage import LoginPage
+from pageObjects.LoginPage import login_page
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 
@@ -40,7 +40,7 @@ class Test_001_Login:
         self.driver = set_up1
         self.driver.get(self.baseURL)
         time.sleep(1)
-        self.lp = LoginPage(self.driver)
+        self.lp = login_page(self.driver)
 
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
