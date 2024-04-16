@@ -78,6 +78,31 @@ cookie = {
 name:"xyz",
 value: 'value'
 }
+#using pandas
+import pandas as pd
+
+# Read test data from Excel file
+test_data = pd.read_excel('testdata.xlsx')
+
+# Function to perform addition
+def add(num1, num2):
+    return num1 + num2
+
+# Iterate over rows of test data
+for index, row in test_data.iterrows():
+    num1 = row['num1']
+    num2 = row['num2']
+    expected_result = row['expected_result']
+
+    # Perform addition
+    result = add(num1, num2)
+
+    # Validate result
+    if result == expected_result:
+        print(f"Test case passed: {num1} + {num2} = {result}")
+    else:
+        print(f"Test case failed: {num1} + {num2} = {result}, expected {expected_result}")
+
 driver.add_cookie(cookie)
 cookies=driver.get_cookies()
 driver.delete_cookie(cookie)
