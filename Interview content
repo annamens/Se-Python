@@ -97,3 +97,41 @@ pytest_sessionstart(session)
 
 #decorators
 decorators are a powerful feature that allows you to modify or extend the behavior of functions or methods. 
+
+#requests for API testing
+GET: to retrieve the data from the server
+PUT: to update an existing resource/ create new if one doesn't exist
+POST: to create a new resource
+DELETE: delete an existing resource
+#HTTP status codes
+2xx- success
+200-OK
+201-created
+204-no content
+3xx- redirection
+301-moved permanently
+302-found
+304-not modified
+4xx-client error
+400-Bad request
+402-unauthorized
+404-not found
+5xx-server error
+500-internal server error
+502-bad gateway
+503-service unavailable
+def test_get_user(user_id):
+  response = requests.post("")
+  user=response.json()
+
+def test_create_user():
+  data={
+      "name":"john",
+      "username":"johndoe",
+      "email":"john@gmaul.com"
+  }
+  response = requests.post("", json=data)
+  created_user=response.json()
+def test_delete_user():
+    response = requests.delete("")
+
