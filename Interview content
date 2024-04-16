@@ -1,0 +1,92 @@
+#Python selenium
+
+from selenium import webdriver
+driver = webdriver.Chrome()
+#waits
+#implicit wait
+driver.implicitly_wait(10)
+#explicit wait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import excpected_conditions as EC
+element = WebDriverWait(driver, 10).until(EC.visibility_of_element_located(By.XPATH,""))
+#Fluent wait
+from selenium.webdriver.ui import FluentWait
+wait = FluentWait(driver).withTimeout(30, SECONDS).pollingEvery(5, SECONDS).ignoring(noSuchElementException)
+element = wait.until(EC.visibility_of_element_located(By.ID,""))
+#hard waits
+import time
+time.sleep(10) # hard waits
+
+driver.get(url)
+driver.refresh()
+driver.backward()
+driver.forward()
+driver.find_element(By.XPATH,"xpath")
+driver.find_element(By.CSS,"").send_keys("text")
+#alerts
+alerts = driver.switch_to_alert
+alerts.send_keys("text")
+alerts.accept()
+alerts.dismiss()
+#Action chains
+from selenium.webdriver.common.action_chains import ActionChains
+ac = ActionChains(driver)
+ac.move_to_element(el).perform() #to hover
+ac.context_click(el).perform()
+ac.double_click(el).perform()
+ac.drag_and_drop(src_el, trgt_el).perform()
+ac.click_and_hold(el)
+ac.release()
+#select
+form selenium.webdriver.support.select import Select
+drop_down = Select(dropdown_el)
+drop_down.select_by_index(2)
+drop_down.select_by_value("value")
+drop_down.selct_by_visible_text("text")
+#window handles
+current_window= driver.current_window_handle
+windows = driver.window_handles[-1] #gives latest window/tab
+window = driver.switch_to_window(driver.window_handles[1])
+#DB
+import pymysql
+import mysql.connector
+conn = pymysql.connect(
+    hostname="",
+    username="",
+    password="",
+    database=""
+    )
+cursor = conn.cursor()
+cursor.execute("query")
+
+#screenshot
+ss = driver.save_Screen_shot("ss.png")
+#JavaScript
+driver.execute_script("script code")
+#frames
+driver.switch_to_frame(el)
+driver.switch_to_default_content()
+#Excel
+from openpyxl import load_workbook
+wb = load_workbook("file.xlsx")
+data = wb.active
+for rows in data.iter_rows(min_row=2, values_only=True):
+  username, password= row
+
+#fixtures
+@pytest.fixture
+fixtures are functions used to provide data, set pre conditions or set up
+needed for the test, they are executed before test methods or functions
+#markers
+@pytest.mark.slow
+@pytest.mark.parameters(1,"string")
+Markers are used to categorize the tests or to add metadata to tests
+they allow us to add certain attributes or porperties to tests
+
+#hooks
+Hooks in pytest are functions that allows to customize or extend the behaviour of test scripts 
+pytest_sessionstart(session)
+
+#decorators
+decorators are a powerful feature that allows you to modify or extend the behavior of functions or methods. 
