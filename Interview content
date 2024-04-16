@@ -73,7 +73,14 @@ wb = load_workbook("file.xlsx")
 data = wb.active
 for rows in data.iter_rows(min_row=2, values_only=True):
   username, password= row
-
+#cookies
+cookie = {
+name:"xyz",
+value: 'value'
+}
+driver.add_cookie(cookie)
+cookies=driver.get_cookies()
+driver.delete_cookie(cookie)
 #fixtures
 @pytest.fixture
 fixtures are functions used to provide data, set pre conditions or set up
