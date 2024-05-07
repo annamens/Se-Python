@@ -16,7 +16,9 @@ class base_page():
     def __init__(self, driver):
         self.driver = driver
 
-
+    def click(self,locator):
+        self.find_element(locator).clear()
+        self.find_element(locator).click()
     def click_by_xpath(self, el):
         el = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(By.XPATH, el))
         el.click()
@@ -66,28 +68,30 @@ class base_page():
         alert = self.driver.switch_to.alert
         alert.accept()
 
-    def wait_until_element_visible(self, el):
+    def wait_until_element_visible(self, *locator):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(el))
+            element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(*locator))
             print((el, ' element is visible'))
             return element
         except TimeoutException:
             try:
                 print('Giving another try for element visibility...')
-                element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(el))
+                element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(*locator))
                 return element
             except TimeoutException:
                 print(el, ' cannot be found')
+    def find_element(self, locator):
+        self.wait_until_element_visible(self,locator)
 
-    def wait_until_element_present(self, el):
+    def wait_until_element_present(self, *locator):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(el))
+            element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(*locator))
             print((el, ' element is visible'))
             return element
         except TimeoutException:
             try:
                 print('Giving another try for element visibility...')
-                element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(el))
+                element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(*locator))
                 return element
             except TimeoutException:
                 print(el, ' cannot be found')

@@ -1,0 +1,16 @@
+git clone- clones the project into the local from remote
+forking->creates a new repository unlike clone
+git fetch- it copies the changes made from remote to local repository but are not reflected in
+work directory unless they are merged or rebased
+git merge- it is used to merge two branches
+git pull- it copies the changes from remote repo to local work space directly unlike git fetch
+git pull = git fetch+git merge
+Git merge- keeps the commit sequence intact by combining the histories of the two branches into a single branch.
+Git rebase-rewrites history by putting changes from one branch at the beginning of another, resulting in a more
+organized, linear project history.
+git stash- creates a snapshot of the local changes
+git stash pop- changes which are in snapshot are applied to the working directory after git stash and git pull.
+git reset- rewinds project history to particular point
+git reset HEAD~1
+git revert-command used to create a new commit that undoes the changes introduced by a specific commit
+git revert HEAD~1

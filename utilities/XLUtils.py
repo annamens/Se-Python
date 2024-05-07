@@ -1,6 +1,14 @@
 from openpyxl import load_workbook, workbook
 import openpyxl
+import pandas as pd
 
+
+def read_excel_data_pandas(file_name,sheet):
+    test_data = pd.read_excel(file_name, sheet_name=sheet)
+    for index, rows in test_data.iterrows():
+        username = test_data['username']
+        password = test_data['password']
+        expected = test_data['exp']
 
 def read_excel_data(file_name, sheet):
     data_list =[]

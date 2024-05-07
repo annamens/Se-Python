@@ -12,7 +12,7 @@ if n>0:
 
 #print primes b/w range
 a =5
-b=97
+b=20
 while a<=b:
     c = True
     for i in range(2, a//2):
@@ -22,3 +22,20 @@ while a<=b:
     if c:
         print(a,end=" ")
     a=a+1
+#print first n prime numbers
+def is_prime(num):
+    if num<=1:
+        return False
+    for i in range(2,num//2+1):
+        if num%i==0:
+            return False
+    return True
+def print_primes(n):
+    primes=[]
+    num=2
+    while len(primes)<n:
+        if is_prime(num):
+            primes.append(num)
+        num+=1
+    print(primes)
+print_primes(9)
