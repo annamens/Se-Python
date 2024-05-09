@@ -27,3 +27,16 @@ print(next(obj))
 
 for value in gen_fun():
     print(value)
+    # for bigger numbers use generator
+
+gen = (i for i in range(1_00_000))
+    # for x in gen:
+print(sum(gen))
+import sys
+print(sys.getsizeof(gen)," bytes")
+gen = [i for i in range(1_00_000)]
+    # for x in gen:
+print(sum(gen))
+import sys
+print(sys.getsizeof(gen)," bytes")
+

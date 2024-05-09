@@ -1,6 +1,5 @@
 lst = [1, 2, 3, 4, 5, 3, 6, 7, 3]
 
-
 import string
 
 print(string.ascii_letters)
@@ -12,7 +11,3 @@ for i in range(0, len(lst) - 1):
                 var.append(lst[i])
             else:
                 print(i, ': ', lst[i])
-
-
-
-

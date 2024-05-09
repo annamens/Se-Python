@@ -55,23 +55,27 @@ window = driver.switch_to_window(driver.window_handles[1])
 import pymysql
 # import mysql.connector
 # conn1= mysql.connector.connect()
-conn = pymysql.connect(
+with pymysql.connect(
     hostname="",
     username="",
     password="",
     database=""
-    )
-cursor = conn.cursor()
-cursor.execute("query")
-conn.close()
+    ) as conn:
+
+    cursor = conn.cursor()
+    cursor.execute("query")
+    conn.close()
 
 #screenshot
-ss = driver.save_Screen_shot("ss.png")
+ss = driver.save_screen_shot("ss.png")
 #JavaScript
 driver.execute_script("script code")
 #frames
 driver.switch_to_frame("el")
 driver.switch_to_default_content()
+#file actions, using context manager to open and close files or connections
+with open("filename",'a') as file:
+    file.write("python-selenium")
 #Excel
 from openpyxl import load_workbook
 wb = load_workbook("file.xlsx")
@@ -121,7 +125,7 @@ value: 'value'
 @pytest.fixture
 fixtures are functions used to provide data, set pre conditions or set up
 needed for the test, they are executed before test methods or functions
-#markers
+#markers , custom markers are defined in pytest.ini
 @pytest.mark.slow
 @pytest.mark.parameters(1,"string")
 Markers are used to categorize the tests or to add metadata to tests
