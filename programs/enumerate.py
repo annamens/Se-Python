@@ -11,12 +11,12 @@ x= enumerate(l)
 print(list(x))
 print(type(x))
 
-import logging
-logger=logging.basicConfig(filename="")
-logger=logging.getLogger()
-logger.setLevel(logging.info())
-
-import configparser
-config=configparser.ConfigParser()
-config.read("file")
-config.get("info","user")
+# import logging
+# logger=logging.basicConfig(filename="")
+# logger=logging.getLogger()
+# logger.setLevel(logging.info())
+#
+# import configparser
+# config=configparser.ConfigParser()
+# config.read("file")
+# config.get("info","user")

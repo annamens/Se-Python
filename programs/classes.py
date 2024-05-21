@@ -18,3 +18,26 @@ r.me("book")
 print(r.name)
 Ran.me("srini")
 print(Ran.stat('srini',28))
+
+
+class Parent:
+    def __init__(self):
+        self.__age= 10
+
+    @property
+    def get_age1(self):
+        self.__age = 31
+        return self.__age
+
+    def get_age(self):
+        return self.__age
+class Child(Parent):
+    def print_pvt(self):
+        print("printed pvt var: ",self.get_age())
+
+    def print_prop_age(self):
+        print(self.get_age1)
+
+child=Child()
+child.print_pvt()
+child.print_prop_age()

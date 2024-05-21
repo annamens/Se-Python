@@ -19,7 +19,8 @@ wait = WebDriverWait(driver, 10, poll_frequency=1, ignored_exceptions=[ElementNo
 element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div")))
 #hard waits
 import time
-time.sleep(10) # hard waits
+time.sleep(10) # hard waits?
+
 
 driver.get("url")
 driver.refresh()
@@ -71,8 +72,8 @@ ss = driver.save_screen_shot("ss.png")
 #JavaScript
 driver.execute_script("script code")
 #frames
-driver.switch_to_frame("el")
-driver.switch_to_default_content()
+driver.switch_to.frame("el")
+driver.switch_to.default_content()
 #file actions, using context manager to open and close files or connections
 with open("filename",'a') as file:
     file.write("python-selenium")

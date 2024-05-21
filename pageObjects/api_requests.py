@@ -3,6 +3,12 @@ import requests
 import json
 import random
 import pytest
+
+#serialization
+data = {'name': 'John', 'age': 30, 'city': 'New York'}
+serialized_data = json.dumps(data)
+#Deserialization
+deserialized_data= json.loads(serialized_data)
 def random_string(n):
     result=''.join(random.choices(string.ascii_lowercase,k=n))
     return result
