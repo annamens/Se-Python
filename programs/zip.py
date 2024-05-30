@@ -6,3 +6,4 @@ iter2=[ 'apple','banan','orange','mango','grape']
 z= zip(iter1,iter2)
 print(list(z))
 print(z)
+

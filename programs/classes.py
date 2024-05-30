@@ -9,7 +9,7 @@ class Ran:
         print("me ", name)
 
     @staticmethod #static methods are independent of class, they
-    # have own parameters, they are like functin but kept inside a class
+    # have own parameters, they are like function but kept inside a class
     def stat(name,age):
         return name,age
 
@@ -23,20 +23,20 @@ print(Ran.stat('srini',28))
 class Parent:
     def __init__(self):
         self.__age= 10
-
+    def get_age(self):
+        return self.__age
     @property
     def get_age1(self):
         self.__age = 31
         return self.__age
 
-    def get_age(self):
-        return self.__age
+
 class Child(Parent):
     def print_pvt(self):
         print("printed pvt var: ",self.get_age())
 
     def print_prop_age(self):
-        print(self.get_age1)
+        print('modified age: ', self.get_age1)
 
 child=Child()
 child.print_pvt()

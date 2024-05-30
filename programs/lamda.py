@@ -1,7 +1,7 @@
 
 def lamda_func(id:int, name:str):
     return name, id
-def lamda_func(x:int, y:int)->str:
+def lamda_func(x:int, y:int)->int:
     return x*y
 
 result = lambda x: x*3

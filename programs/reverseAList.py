@@ -6,4 +6,7 @@ print("Before reverse: ", lst)
 for i in range(len(lst) - 1, -1,-1):
     rev.append(lst[i])
 
+
+new= sorted(lst, reverse=True)
+print(new)
 print("After reverse: ",rev)

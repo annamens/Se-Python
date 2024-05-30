@@ -1,0 +1,127 @@
+CI-continuous Integration
+dev->Git->devops->build->test->git
+CD- continuous delivery
+release into the prod
+
+Build->test->deploy->release
+build jobs->deploy jobs->test jobs->release jobs
+
+SETUP PIPELINE:
+1. --Run Jenkins instance (https://localhost:8080)
+2. Install required plugins
+--pipeline plugin
+--Git
+--shiningPanda(for python)
+3. Create a New Job
+--Jenkins Dashboard->New
+--TestJob->Freestyle project
+4. Configure job
+--General configuration(decription)
+--SCM(git creds and URLs)
+--specify the branch if master or main
+--Build Triggers(build periodically or Poll SCM)
+5. Build Env
+--configure build env
+Build steps
+--for python,select Execute shell
+6. Post-build Actions
+--such as sending email notifications, publishing test results
+--for publishing pytest results, we need JUnit plugin:
+    -add post-build action
+    -select Publish JUnit test result report
+    -Enter the path to the test results(eg.**/test-resports/test.xml)
+7. Save and run the job
+
+SHELL SCRIPT build step
+#!/bin/bash
+set -e  (this tells the shell to exit if cmd returns non-zero status
+echo "setting up virtual env" (echo command prints message in console)
+python3 -m venv  (setting up virtual env at source)
+source venv/bin/activate (activate virtual env that was created)
+echo "Installing dependencies"
+pip install -r requirements.txt (installs all the python packages)
+echo "Running tests"
+pytest --junitxml=test-reports/results.xml
+
+
+
+For publishing reports
+Create JenkinsFile at the root of the project dir in the GIT remote repository.
+pipeline {
+    agent any
+
+    environment {
+        // Specify the environment variables if needed
+        VENV_DIR = 'venv'
+        BROWSER = 'chrome'
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                // Clean the workspace before starting
+                cleanWs()
+                // Clone the repository
+                git 'https://github.com/yourusername/selenium-pytest-automation.git'
+            }
+        }
+
+        stage('Setup Python Environment') {
+            steps {
+                // Install Python and dependencies
+                sh '''
+                    python -m venv $VENV_DIR
+                    source $VENV_DIR/bin/activate
+                    pip install -r requirements.txt
+                '''
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                // Run the tests with Pytest
+                sh '''
+                    source $VENV_DIR/bin/activate
+                    pytest --browser $BROWSER --html=reports/pytest_report.html
+                '''
+            }
+        }
+
+        stage('Publish Report') {
+            steps {
+                // Publish the HTML report
+                publishHTML (target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'reports',
+                    reportFiles: 'pytest_report.html',
+                    reportName: 'Pytest Report'
+                ])
+            }
+        }
+    }
+
+    post {
+        always {
+            // Archive the test results
+            archiveArtifacts artifacts: 'reports/pytest_report.html', allowEmptyArchive: true
+            // Clean up workspace
+            cleanWs()
+        }
+    }
+}
+
+
+#GROOVY
+publishHTML (target: [
+    allowMissing: false,
+    alwaysLinkToLastBuild: true,
+    keepAll: true,
+    reportDir: 'reports',
+    reportFiles: 'pytest_report.html',
+    reportName: 'Pytest Report'
+])
+
+
+

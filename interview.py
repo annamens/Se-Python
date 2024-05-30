@@ -65,7 +65,6 @@ with pymysql.connect(
 
     cursor = conn.cursor()
     cursor.execute("query")
-    conn.close()
 
 #screenshot
 ss = driver.save_screen_shot("ss.png")
@@ -109,7 +108,7 @@ logger.setLevel(logging.info())
 logger.info("info")
 #read_properties
 import configparser
-config=configparser.ConfigParser()
+config=configparser.ConfigParser(),
 config.read("filename")
 config.get('info','username')
 
