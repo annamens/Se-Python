@@ -10,7 +10,10 @@ Git rebase-rewrites history by putting changes from one branch at the beginning 
 organized, linear project history.
 git stash- creates a snapshot of the local changes
 git stash pop- changes which are in snapshot are applied to the working directory after git stash and git pull.
+------------------------
 git reset- rewinds project history to particular point
 git reset HEAD~1
+contains soft, mixed and hard
+----------------
 git revert-command used to create a new commit that undoes the changes introduced by a specific commit
 git revert HEAD~1

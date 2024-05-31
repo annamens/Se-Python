@@ -27,3 +27,4 @@ def search(strArr):
 
     print(' '.join(f"{key}:{result[key]}" for key in result))
 search(['A:3','B:4','A:-9'])
+
