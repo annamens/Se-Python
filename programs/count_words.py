@@ -12,6 +12,13 @@ for word in txt:
         count[word]  = count[word]+1
     else:
         count[word] =1
-
-
 print(count)
+
+max =0
+repeated=''
+for key, value in count.items():
+    if value > max:
+        max=value
+        repeated=key
+
+print(repeated)
