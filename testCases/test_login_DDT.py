@@ -8,6 +8,7 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from utilities import XLUtils
 from ddt import data, unpack, ddt
+from utilities.custom_logger import test_logger
 
 
 @pytest.mark.usefixtures('set_up1')
@@ -42,6 +43,7 @@ class Test_002_DDT_Login(softest.TestCase):
                 self.lp.clickLogout()
                 lst_status.append("Pass")
             elif exp == 'Fail':
+                test_logger.info(f'failed with {username}')
                 self.logger.info("**** failed ****")
                 self.lp.clickLogout()
                 lst_status.append("Fail")

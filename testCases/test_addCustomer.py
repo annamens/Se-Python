@@ -5,7 +5,7 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from pageObjects.LoginPage import login_page
 from pageObjects.AddCustomer import addCustomer
-
+from utilities.custom_logger import test_logger
 
 class Test_001_AddCustomer:
     baseurl = ReadConfig.getAppUrl()
@@ -25,6 +25,7 @@ class Test_001_AddCustomer:
         self.lp.setUserName(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
+        test_logger.info('Login successful')
         self.logger.info("************* Login succesful **********")
         self.logger.info("******* Starting Add Customer Test **********")
         self.ac = addCustomer(self.driver)
@@ -44,16 +45,18 @@ class Test_001_AddCustomer:
         self.ac.setCustomerRoles("Guests")
         self.ac.setAdminContent("This is for testing...")
         self.ac.clickOnSave()
-
+        test_logger.info('Saved customer info')
         self.logger.info("************* Saving customer info **********")
         self.logger.info("********* Add customer validation started *****************")
 
         print(self.ac.getSuccessText())
         if 'The new customer has been added successfully.' in self.ac.getSuccessText():
             assert True
+            test_logger.info(' Add customer test passed')
             self.logger.info("********* Add customer Test Passed *********")
         else:
             assert False
+            test_logger.info('add customer test failed')
             self.logger.info("********* Add customer Test Failed *********")
 
         self.driver.close()

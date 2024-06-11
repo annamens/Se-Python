@@ -4,6 +4,7 @@ from selenium import webdriver
 from pageObjects.LoginPage import login_page
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
+from utilities.custom_logger import exception_logger, error_logger, test_logger
 
 
 class Test_001_Login:
@@ -24,11 +25,13 @@ class Test_001_Login:
         if act_title == 'Your store. Login':
             assert True
             self.driver.close()
+            test_logger.info('Home page title asserted.')
             self.logger.info("************** Home page title passed *****************")
 
         else:
             self.driver.save_screenshot(".\\screenshots\\" + "test_homePageTitle.png")
             assert False
+            error_logger.error('Failed due to assertion')
             self.driver.close()
             self.logger.error("************** Home page title failed *****************")
 
@@ -49,10 +52,12 @@ class Test_001_Login:
         if act_title == 'Dashboard / nopCommerce administration':
             assert True
             self.driver.close()
+            test_logger.info('Logged in successfully')
             self.logger.info("************** Login test passed *****************")
 
         else:
             self.driver.save_screenshot(".\\screenshots\\" + "test_login.png")
             assert False
             self.driver.close()
+            test_logger.error('Login failed')
             self.logger.error("************** Login test failed *****************")

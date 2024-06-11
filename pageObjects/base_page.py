@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import re
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.alert import Alert
+from utilities.custom_logger import exception_logger, test_logger, error_logger
 
 
 class base_page():
@@ -70,9 +71,9 @@ class base_page():
 
     def wait_until_element_visible(self, *locator):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(*locator))
+            el = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(*locator))
             print((el, ' element is visible'))
-            return element
+            return el
         except TimeoutException:
             try:
                 print('Giving another try for element visibility...')
@@ -85,15 +86,16 @@ class base_page():
 
     def wait_until_element_present(self, *locator):
         try:
-            element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(*locator))
+            el = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(*locator))
             print((el, ' element is visible'))
-            return element
+            return el
         except TimeoutException:
             try:
                 print('Giving another try for element visibility...')
                 element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(*locator))
                 return element
-            except TimeoutException:
+            except TimeoutException as e:
+                exception_logger.error(str(e))
                 print(el, ' cannot be found')
 
     def identify_selector(selector):
