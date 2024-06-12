@@ -403,3 +403,19 @@ AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
 06/12/2024 12:37:44 PM: INFO: Get LATEST chromedriver version for google-chrome
 06/12/2024 12:37:45 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
 06/12/2024 12:37:46 PM: INFO: Chrome driver initialized
+06/12/2024 07:31:35 PM: INFO: ====== WebDriver manager ======
+06/12/2024 07:31:36 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 07:31:36 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 07:31:37 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 07:31:39 PM: INFO: Chrome driver initialized
+06/12/2024 07:31:39 PM: INFO: ************** Test_001_Login *****************
+06/12/2024 07:31:39 PM: INFO: ************** verifying home page title *****************
+06/12/2024 07:31:42 PM: INFO: Home page title asserted.
+06/12/2024 07:31:42 PM: INFO: ************** Home page title passed *****************
+06/12/2024 07:34:02 PM: INFO: ====== WebDriver manager ======
+06/12/2024 07:34:03 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 07:34:03 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 07:34:04 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 07:34:05 PM: INFO: Chrome driver initialized
+06/12/2024 07:34:05 PM: INFO: ************** Test_001_Login *****************
+06/12/2024 07:34:05 PM: INFO: ************** verifying home page title *****************
