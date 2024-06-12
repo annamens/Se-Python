@@ -22,9 +22,9 @@ class Test_001_AddCustomer:
         self.driver.get(self.baseurl)
 
         self.lp = login_page(self.driver)
-        self.lp.setUserName(self.username)
-        self.lp.setPassword(self.password)
-        self.lp.clickLogin()
+        self.lp.set_username(self.username)
+        self.lp.set_password(self.password)
+        self.lp.click_login()
         test_logger.info('Login successful')
         self.logger.info("************* Login succesful **********")
         self.logger.info("******* Starting Add Customer Test **********")
@@ -65,7 +65,7 @@ class Test_001_AddCustomer:
     def error_fail_test(self, set_up1):
         try:
             x=1/0
-        except Exception as e:
+        except ZeroDivisionError as e:
             error_logger.error(str(e))
     def test_exception_fail(self,set_up1):
         self.driver = set_up1
