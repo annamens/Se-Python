@@ -225,3 +225,181 @@
 06/12/2024 10:56:38 AM: INFO: ************** verify Login test  *****************
 06/12/2024 10:56:44 AM: INFO: Logged in successfully
 06/12/2024 10:56:44 AM: INFO: ************** Login test passed *****************
+06/12/2024 12:22:35 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:22:47 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:23:09 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:23:30 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:23:36 PM: INFO: Chrome driver initialized
+06/12/2024 12:23:37 PM: INFO: *********** test_addCustomer ***********
+06/12/2024 12:23:43 PM: INFO: Login successful
+06/12/2024 12:23:43 PM: INFO: ************* Login succesful **********
+06/12/2024 12:23:43 PM: INFO: ******* Starting Add Customer Test **********
+06/12/2024 12:24:16 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:24:30 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:24:55 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:29:21 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:29:22 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:29:22 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:29:23 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:29:24 PM: INFO: Chrome driver initialized
+06/12/2024 12:29:24 PM: INFO: ************** Test_001_Login *****************
+06/12/2024 12:29:24 PM: INFO: ************** verifying home page title *****************
+06/12/2024 12:29:28 PM: INFO: Home page title asserted.
+06/12/2024 12:29:28 PM: INFO: ************** Home page title passed *****************
+06/12/2024 12:29:30 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:29:32 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:29:33 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:29:33 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:29:34 PM: INFO: Chrome driver initialized
+06/12/2024 12:29:35 PM: INFO: ************** test_login *****************
+06/12/2024 12:29:35 PM: INFO: ************** verify Login test  *****************
+06/12/2024 12:29:41 PM: INFO: Logged in successfully
+06/12/2024 12:29:41 PM: INFO: ************** Login test passed *****************
+06/12/2024 12:30:19 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:30:20 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:20 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:21 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:30:22 PM: INFO: Chrome driver initialized
+06/12/2024 12:30:22 PM: INFO: *********** test_addCustomer ***********
+06/12/2024 12:30:26 PM: INFO: Login successful
+06/12/2024 12:30:26 PM: INFO: ************* Login succesful **********
+06/12/2024 12:30:26 PM: INFO: ******* Starting Add Customer Test **********
+06/12/2024 12:30:44 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:30:45 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:45 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:45 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:30:47 PM: INFO: Chrome driver initialized
+06/12/2024 12:30:48 PM: ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+06/12/2024 12:30:51 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:30:51 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:52 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:30:52 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:30:54 PM: INFO: Chrome driver initialized
+06/12/2024 12:30:54 PM: INFO: ************** Test_001_Login *****************
+06/12/2024 12:30:54 PM: INFO: ************** verifying home page title *****************
+06/12/2024 12:30:57 PM: INFO: Home page title asserted.
+06/12/2024 12:30:57 PM: INFO: ************** Home page title passed *****************
+06/12/2024 12:30:59 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:31:00 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:00 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:01 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:31:02 PM: INFO: Chrome driver initialized
+06/12/2024 12:31:02 PM: INFO: ************** test_login *****************
+06/12/2024 12:31:02 PM: INFO: ************** verify Login test  *****************
+06/12/2024 12:31:08 PM: INFO: Logged in successfully
+06/12/2024 12:31:08 PM: INFO: ************** Login test passed *****************
+06/12/2024 12:31:10 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:31:11 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:12 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:12 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:31:13 PM: INFO: Chrome driver initialized
+06/12/2024 12:31:13 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:31:14 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:15 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:31:15 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:31:17 PM: INFO: Chrome driver initialized
+06/12/2024 12:32:48 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:32:49 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:32:50 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:32:50 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:32:51 PM: INFO: Chrome driver initialized
+06/12/2024 12:32:51 PM: INFO: *********** test_addCustomer ***********
+06/12/2024 12:32:55 PM: INFO: Login successful
+06/12/2024 12:32:55 PM: INFO: ************* Login succesful **********
+06/12/2024 12:32:55 PM: INFO: ******* Starting Add Customer Test **********
+06/12/2024 12:33:12 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:33:13 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:33:13 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:33:14 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:33:15 PM: INFO: Chrome driver initialized
+06/12/2024 12:33:17 PM: ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+06/12/2024 12:34:47 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:34:48 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:34:49 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:34:49 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:34:50 PM: INFO: Chrome driver initialized
+06/12/2024 12:34:50 PM: INFO: *********** test_addCustomer ***********
+06/12/2024 12:34:54 PM: INFO: Login successful
+06/12/2024 12:34:54 PM: INFO: ************* Login succesful **********
+06/12/2024 12:34:54 PM: INFO: ******* Starting Add Customer Test **********
+06/12/2024 12:35:11 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:35:12 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:35:12 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:35:13 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:35:14 PM: INFO: Chrome driver initialized
+06/12/2024 12:35:14 PM: ERROR: division by zero
+06/12/2024 12:35:20 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:35:21 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:35:22 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:35:22 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:35:23 PM: INFO: Chrome driver initialized
+06/12/2024 12:35:25 PM: ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+06/12/2024 12:36:40 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:36:41 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:36:41 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:36:42 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:36:43 PM: INFO: Chrome driver initialized
+06/12/2024 12:36:43 PM: INFO: *********** test_addCustomer ***********
+06/12/2024 12:36:46 PM: INFO: Login successful
+06/12/2024 12:36:46 PM: INFO: ************* Login succesful **********
+06/12/2024 12:36:46 PM: INFO: ******* Starting Add Customer Test **********
+06/12/2024 12:37:03 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:04 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:04 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:05 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:06 PM: INFO: Chrome driver initialized
+06/12/2024 12:37:06 PM: ERROR: division by zero
+06/12/2024 12:37:12 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:13 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:14 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:14 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:16 PM: INFO: Chrome driver initialized
+06/12/2024 12:37:18 PM: ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+06/12/2024 12:37:20 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:21 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:22 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:22 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:23 PM: INFO: Chrome driver initialized
+06/12/2024 12:37:23 PM: INFO: ************** Test_001_Login *****************
+06/12/2024 12:37:23 PM: INFO: ************** verifying home page title *****************
+06/12/2024 12:37:26 PM: INFO: Home page title asserted.
+06/12/2024 12:37:26 PM: INFO: ************** Home page title passed *****************
+06/12/2024 12:37:28 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:29 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:30 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:30 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:31 PM: INFO: Chrome driver initialized
+06/12/2024 12:37:31 PM: INFO: ************** test_login *****************
+06/12/2024 12:37:31 PM: INFO: ************** verify Login test  *****************
+06/12/2024 12:37:38 PM: INFO: Logged in successfully
+06/12/2024 12:37:38 PM: INFO: ************** Login test passed *****************
+06/12/2024 12:37:40 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:41 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:41 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:42 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:43 PM: INFO: Chrome driver initialized
+06/12/2024 12:37:43 PM: INFO: ====== WebDriver manager ======
+06/12/2024 12:37:44 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:44 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 12:37:45 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 12:37:46 PM: INFO: Chrome driver initialized

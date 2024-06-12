@@ -16,9 +16,9 @@ def chrome_options():
     chrome_options = Options()
     # chrome_options.add_argument("--headless")  # Run in headless mode
     # chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration
-    chrome_options.add_argument("--no-sandbox")  # Required for running as root in some Docker environments
-    chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
-    chrome_options.add_argument("--disable-popup-blocking")  # Disable pop-ups
+    # chrome_options.add_argument("--no-sandbox")  # Required for running as root in some Docker environments
+    # chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+    # chrome_options.add_argument("--disable-popup-blocking")  # Disable pop-ups
     # Initialize the Chrome driver
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
     return driver

@@ -62,15 +62,17 @@ class Test_001_AddCustomer:
         self.driver.close()
 
         self.logger.info("******* Ending Add customer test *********")
-    def error_fail_test(self, set_up1):
+    def test_error_fail(self, set_up1):
         try:
             x=1/0
         except ZeroDivisionError as e:
-            error_logger.error(str(e))
+            return error_logger.error(str(e))
+        return x
+
     def test_exception_fail(self,set_up1):
         self.driver = set_up1
         self.driver.get(self.baseurl)
-        self.lp = login_page(self.driver)
+        # self.lp = login_page(self.driver)
         try:
             self.lp.click_login()
         except Exception as e:

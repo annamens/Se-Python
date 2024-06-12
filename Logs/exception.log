@@ -1,0 +1,24 @@
+2024-06-12 12:30:48,991 ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+2024-06-12 12:33:17,269 ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+2024-06-12 12:35:25,897 ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
+2024-06-12 12:37:18,580 ERROR: 'Test_001_AddCustomer' object has no attribute 'lp'
+Traceback (most recent call last):
+  File "C:\Users\shrin\PycharmProjects\Se-Python\testCases\test_addCustomer.py", line 77, in test_exception_fail
+    self.lp.click_login()
+    ^^^^^^^
+AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
