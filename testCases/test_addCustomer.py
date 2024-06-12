@@ -5,7 +5,7 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from pageObjects.LoginPage import login_page
 from pageObjects.AddCustomer import addCustomer
-from utilities.custom_logger import test_logger
+from utilities.custom_logger import test_logger,error_logger, exception_logger
 
 class Test_001_AddCustomer:
     baseurl = ReadConfig.getAppUrl()
@@ -62,7 +62,19 @@ class Test_001_AddCustomer:
         self.driver.close()
 
         self.logger.info("******* Ending Add customer test *********")
-
+    def error_fail_test(self, set_up1):
+        try:
+            x=1/0
+        except Exception as e:
+            error_logger.error(str(e))
+    def test_exception_fail(self,set_up1):
+        self.driver = set_up1
+        self.driver.get(self.baseurl)
+        self.lp = login_page(self.driver)
+        try:
+            self.lp.click_login()
+        except Exception as e:
+            exception_logger.exception(str(e))
 
 def random_generator(size=8, chars=string.ascii_lowercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))

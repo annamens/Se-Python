@@ -28,7 +28,7 @@ class Test_002_DDT_Login(softest.TestCase):
     @data(*XLUtils.read_excel_data(excel_path, sheet_no))
     @unpack
     def test_ddt_test(self,username, password, exp):
-        # self.driver = self.set_up1
+        self.driver = self.set_up1
         self.lp.load_url(self.baseURL)
         self.lp.setUserName(username)
         self.lp.setPassword(password)

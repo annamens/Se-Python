@@ -207,3 +207,175 @@
 06/11/2024 07:40:23 PM: INFO: ************** test_login *****************
 06/11/2024 07:40:23 PM: INFO: ************** verify Login test  *****************
 06/11/2024 07:40:30 PM: INFO: ************** Login test passed *****************
+06/12/2024 10:41:56 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 10:42:02 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 10:42:02 AM: INFO: ************** verifying home page title *****************
+06/12/2024 10:42:05 AM: INFO: Home page title asserted.
+06/12/2024 10:42:05 AM: INFO: ************** Home page title passed *****************
+06/12/2024 10:42:09 AM: INFO: ************** test_login *****************
+06/12/2024 10:42:09 AM: INFO: ************** verify Login test  *****************
+06/12/2024 10:42:14 AM: INFO: Logged in successfully
+06/12/2024 10:42:14 AM: INFO: ************** Login test passed *****************
+06/12/2024 10:56:25 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 10:56:31 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 10:56:31 AM: INFO: ************** verifying home page title *****************
+06/12/2024 10:56:34 AM: INFO: Home page title asserted.
+06/12/2024 10:56:34 AM: INFO: ************** Home page title passed *****************
+06/12/2024 10:56:38 AM: INFO: ************** test_login *****************
+06/12/2024 10:56:38 AM: INFO: ************** verify Login test  *****************
+06/12/2024 10:56:44 AM: INFO: Logged in successfully
+06/12/2024 10:56:44 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:05:43 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:05:49 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:05:49 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:05:52 AM: INFO: Home page title asserted.
+06/12/2024 11:05:52 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:05:56 AM: INFO: ************** test_login *****************
+06/12/2024 11:05:56 AM: INFO: ************** verify Login test  *****************
+06/12/2024 11:06:01 AM: INFO: Logged in successfully
+06/12/2024 11:06:01 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:10:23 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:10:29 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:10:29 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:10:32 AM: INFO: Home page title asserted.
+06/12/2024 11:10:32 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:10:36 AM: INFO: ************** test_login *****************
+06/12/2024 11:10:36 AM: INFO: ************** verify Login test  *****************
+06/12/2024 11:10:41 AM: INFO: Logged in successfully
+06/12/2024 11:10:41 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:11:50 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:11:51 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:11:52 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:11:52 AM: INFO: There is no [win64] chromedriver "125.0.6422.141" for browser google-chrome "125.0.6422" in cache
+06/12/2024 11:11:52 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:11:53 AM: INFO: WebDriver version 125.0.6422.141 selected
+06/12/2024 11:11:53 AM: INFO: Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.141/win32/chromedriver-win32.zip
+06/12/2024 11:11:53 AM: INFO: About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.141/win32/chromedriver-win32.zip
+06/12/2024 11:11:54 AM: INFO: Driver downloading response is 200
+06/12/2024 11:11:57 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:11:57 AM: INFO: Driver has been saved in cache [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141]
+06/12/2024 11:11:59 AM: INFO: Chrome driver initialized
+06/12/2024 11:11:59 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:12:08 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:12:09 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:10 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:10 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:12:11 AM: INFO: Chrome driver initialized
+06/12/2024 11:12:11 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:12:11 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:12:14 AM: INFO: Home page title asserted.
+06/12/2024 11:12:14 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:12:16 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:12:17 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:18 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:18 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:12:20 AM: INFO: Chrome driver initialized
+06/12/2024 11:12:20 AM: INFO: ************** test_login *****************
+06/12/2024 11:12:20 AM: INFO: ************** verify Login test  *****************
+06/12/2024 11:12:25 AM: INFO: Logged in successfully
+06/12/2024 11:12:25 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:12:27 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:12:28 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:28 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:29 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:12:30 AM: INFO: Chrome driver initialized
+06/12/2024 11:12:30 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:12:31 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:32 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:12:32 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:12:33 AM: INFO: Chrome driver initialized
+06/12/2024 11:23:23 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:23:24 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:25 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:26 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:23:28 AM: INFO: Chrome driver initialized
+06/12/2024 11:23:28 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:23:34 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:23:35 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:36 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:37 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:23:38 AM: INFO: Chrome driver initialized
+06/12/2024 11:23:38 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:23:38 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:23:41 AM: INFO: Home page title asserted.
+06/12/2024 11:23:41 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:23:44 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:23:45 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:46 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:46 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:23:48 AM: INFO: Chrome driver initialized
+06/12/2024 11:23:48 AM: INFO: ************** test_login *****************
+06/12/2024 11:23:48 AM: INFO: ************** verify Login test  *****************
+06/12/2024 11:23:54 AM: INFO: Logged in successfully
+06/12/2024 11:23:54 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:23:57 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:23:58 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:23:59 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:24:00 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:24:01 AM: INFO: Chrome driver initialized
+06/12/2024 11:24:01 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:24:03 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:24:04 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:24:05 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:24:06 AM: INFO: Chrome driver initialized
+06/12/2024 11:26:47 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:26:48 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:26:49 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:26:50 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:26:51 AM: INFO: Chrome driver initialized
+06/12/2024 11:26:51 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:26:57 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:26:59 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:00 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:01 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:27:03 AM: INFO: Chrome driver initialized
+06/12/2024 11:27:10 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:27:12 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:14 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:15 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:27:17 AM: INFO: Chrome driver initialized
+06/12/2024 11:27:17 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:27:17 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:27:19 AM: INFO: Home page title asserted.
+06/12/2024 11:27:19 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:27:22 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:27:24 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:25 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:26 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:27:28 AM: INFO: Chrome driver initialized
+06/12/2024 11:27:28 AM: INFO: ************** test_login *****************
+06/12/2024 11:27:28 AM: INFO: ************** verify Login test  *****************
+06/12/2024 11:27:33 AM: INFO: Logged in successfully
+06/12/2024 11:27:33 AM: INFO: ************** Login test passed *****************
+06/12/2024 11:27:36 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:27:38 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:39 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:41 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:27:43 AM: INFO: Chrome driver initialized
+06/12/2024 11:27:43 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:27:45 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:47 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:27:48 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:27:50 AM: INFO: Chrome driver initialized
+06/12/2024 11:33:12 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:33:18 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:33:23 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:33:28 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:33:31 AM: INFO: Chrome driver initialized
+06/12/2024 11:33:32 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 11:33:50 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:34:04 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:34:23 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:34:45 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:34:50 AM: INFO: Chrome driver initialized
+06/12/2024 11:35:00 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:35:10 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:35:45 AM: INFO: Get LATEST chromedriver version for google-chrome
+06/12/2024 11:36:10 AM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/12/2024 11:36:14 AM: INFO: Chrome driver initialized
+06/12/2024 11:36:14 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 11:36:14 AM: INFO: ************** verifying home page title *****************
+06/12/2024 11:36:34 AM: INFO: Home page title asserted.
+06/12/2024 11:36:34 AM: INFO: ************** Home page title passed *****************
+06/12/2024 11:36:37 AM: INFO: ====== WebDriver manager ======
+06/12/2024 11:36:57 AM: INFO: Get LATEST chromedriver version for google-chrome
