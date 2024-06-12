@@ -207,3 +207,21 @@
 06/11/2024 07:40:23 PM: INFO: ************** test_login *****************
 06/11/2024 07:40:23 PM: INFO: ************** verify Login test  *****************
 06/11/2024 07:40:30 PM: INFO: ************** Login test passed *****************
+06/12/2024 10:41:56 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 10:42:02 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 10:42:02 AM: INFO: ************** verifying home page title *****************
+06/12/2024 10:42:05 AM: INFO: Home page title asserted.
+06/12/2024 10:42:05 AM: INFO: ************** Home page title passed *****************
+06/12/2024 10:42:09 AM: INFO: ************** test_login *****************
+06/12/2024 10:42:09 AM: INFO: ************** verify Login test  *****************
+06/12/2024 10:42:14 AM: INFO: Logged in successfully
+06/12/2024 10:42:14 AM: INFO: ************** Login test passed *****************
+06/12/2024 10:56:25 AM: INFO: *********** test_addCustomer ***********
+06/12/2024 10:56:31 AM: INFO: ************** Test_001_Login *****************
+06/12/2024 10:56:31 AM: INFO: ************** verifying home page title *****************
+06/12/2024 10:56:34 AM: INFO: Home page title asserted.
+06/12/2024 10:56:34 AM: INFO: ************** Home page title passed *****************
+06/12/2024 10:56:38 AM: INFO: ************** test_login *****************
+06/12/2024 10:56:38 AM: INFO: ************** verify Login test  *****************
+06/12/2024 10:56:44 AM: INFO: Logged in successfully
+06/12/2024 10:56:44 AM: INFO: ************** Login test passed *****************
