@@ -419,3 +419,10 @@ AttributeError: 'Test_001_AddCustomer' object has no attribute 'lp'
 06/12/2024 07:34:05 PM: INFO: Chrome driver initialized
 06/12/2024 07:34:05 PM: INFO: ************** Test_001_Login *****************
 06/12/2024 07:34:05 PM: INFO: ************** verifying home page title *****************
+06/13/2024 12:07:29 PM: INFO: ====== WebDriver manager ======
+06/13/2024 12:07:30 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/13/2024 12:07:30 PM: INFO: Get LATEST chromedriver version for google-chrome
+06/13/2024 12:07:31 PM: INFO: Driver [C:\Users\shrin\.wdm\drivers\chromedriver\win64\125.0.6422.141\chromedriver-win32/chromedriver.exe] found in cache
+06/13/2024 12:07:33 PM: INFO: Chrome driver initialized
+06/13/2024 12:07:33 PM: INFO: ************** Test_001_Login *****************
+06/13/2024 12:07:33 PM: INFO: ************** verifying home page title *****************

@@ -1,6 +1,10 @@
 
+n=1234
 
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
 
-driver=webdriver.Chrome()
+new =0
+while n !=0:
+    x= n%10
+    new = new*10+x
+    n=n//10
+print(new)

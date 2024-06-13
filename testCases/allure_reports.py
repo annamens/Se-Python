@@ -16,7 +16,7 @@ class Test_allure:
     password = ReadConfig.getPassword()
     logger = LogGen.logGen()
 
-    @all
+
     @pytest.mark.regression
     def test_homePageTitle(self, set_up1):
         self.logger.info("************** Test_001_Login *****************")

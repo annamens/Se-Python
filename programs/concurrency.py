@@ -9,7 +9,7 @@ process = Process(target=worker)
 
 # Start the process
 process.start()
-#se - 4.21
+#se - 4.21.0
 from selenium import webdriver
 driver = webdriver.Chrome()
 driver.maximize_window()
