@@ -10,6 +10,8 @@ from selenium.webdriver.chrome.options import Options
 GRID_URL = "http://192.168.137.1:4444/wd/hub"
 
 chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--open-maximize")
 driver = webdriver.Remote(
     command_executor=GRID_URL,
     options=chrome_options

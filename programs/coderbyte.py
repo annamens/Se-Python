@@ -15,8 +15,8 @@ print(intersperse("prettykotte",'shree'))
 def search(strArr):
     result={}
     for item in strArr:
-        for data in item.split():
-            key, value = data.split(':')
+        # for data in item.split():
+            key, value = item.split(':')
             value=int(value)
             if key in result:
                 result[key] += value

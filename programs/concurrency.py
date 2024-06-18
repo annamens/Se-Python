@@ -18,7 +18,7 @@ driver.get("url")
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-el=WebDriverWait(driver, 10).until(EC.visibility_of_element_located(By.XPATH, "path"))
+el=WebDriverWait(driver, 10).until(EC.visibility_of_element_located(By.XPATH, "pathh"))
 driver.refresh()
 driver.forward()
 driver.switch_to.window(driver.window_handles[-1])

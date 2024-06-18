@@ -4,9 +4,13 @@ import  requests
 import pymysql
 from selenium import webdriver
 from selenium.common import ElementNotVisibleException, ElementNotSelectableException
-
+from selenium.webdriver.chrome.options import Options
 driver = webdriver.Chrome()
-#waits
+chrome_options = Options
+remote_driver = webdriver.Remote(command_executor='host', options=chrome_options)
+chrome_options.add_argument('--headless')
+
+#waitsc
 #implicit wait
 driver.implicitly_wait(10)
 #explicit wait
@@ -104,8 +108,8 @@ logging.basicConfig(filename="filename",
                     format="format",
                     datefmt="")
 logger=logging.getLogger()
-logger.setLevel(logging.info())
-logger.info("info")
+logger.setLevel(logging.INFO)
+
 #read_properties
 import configparser
 config=configparser.ConfigParser(),
@@ -142,6 +146,7 @@ it is to modify a function at run time by assigning new function to old function
 #requests for API testing
 GET: to retrieve the data from the server
 PUT: to update an existing resource/ create new if one doesn't exist
+PATCH: update partial data
 POST: to create a new resource
 DELETE: delete an existing resource
 #HTTP status codes

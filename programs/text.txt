@@ -1,0 +1,2 @@
+This approach correctly formats the number according to the Indian numbering system,
+including handling decimal parts if present.python

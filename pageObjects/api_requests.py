@@ -3,7 +3,7 @@ import requests
 import json
 import random
 import pytest
-
+from jsonschema import validate , validators
 #serialization
 data = {'name': 'John', 'age': 30, 'city': 'New York'}
 serialized_data = json.dumps(data)
